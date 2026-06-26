@@ -1,1 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:transparent;
+
+    overflow:hidden;
+
+    font-family:'Quicksand',sans-serif;
+
+}
+
+#widget{
+
+    position:relative;
+
+    width:650px;
+
+    margin:auto;
+
+    padding:25px 20px 35px;
+
+    text-align:center;
+
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+#header{
+
+    position:relative;
+
+    z-index:5;
+
+    margin-bottom:18px;
+
+}
+
+#header h1{
+
+    color:white;
+
+    font-size:40px;
+
+    font-weight:700;
+
+    text-shadow:
+        0 0 18px rgba(255,255,255,.18);
+
+}
+
+#header p{
+
+    margin-top:10px;
+
+    color:#d9e7d0;
+
+    font-size:20px;
+
+}
+
+/* ==========================
+        BAR
+========================== */
+
+#goal-track{
+
+    position:relative;
+
+    width:100%;
+
+    height:42px;
+
+    border-radius:999px;
+
+    background:#243224;
+
+    border:3px solid #c8ddb9;
+
+    overflow:visible;
+
+    box-shadow:
+        0 0 20px rgba(196,227,176,.35);
+
+}
+
+#goal-fill{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #9bbb8d,
+        #d2efc5
+    );
+
+    transition:width .8s ease;
+
+}
+
+/* ==========================
+        FROG
+========================== */
+
+#frog{
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    width:95px;
+
+    transform:translate(-18px,-65%);
+
+    z-index:20;
+
+    pointer-events:none;
+
+    transition:left .8s ease;
+
+    filter:
+        drop-shadow(0 6px 12px rgba(0,0,0,.35));
+
+}
+
+/* ==========================
+        COUNTER
+========================== */
+
+#counter{
+
+    margin-top:28px;
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.18);
+
+}
+
+#counter span{
+
+    margin:0 6px;
+
+}
+
+/* ==========================
+        PARTICLES
+========================== */
+
+#leaf-layer,
+#sparkle-layer{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.floating-leaf{
+
+    position:absolute;
+
+    width:22px;
+
+    opacity:.65;
+
+}
+
+.sparkle{
+
+    position:absolute;
+
+    width:22px;
+
+    opacity:.85;
+
+}
