@@ -1,34 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
+/* =====================================
+   RESET
+===================================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html,
 body{
-    background:#0f1110;
+
+    width:100%;
+    height:100%;
+
+    background:transparent;
+
     overflow:hidden;
+
     font-family:'Quicksand',sans-serif;
+
 }
+
+/* =====================================
+   WIDGET
+===================================== */
 
 #widget{
 
     position:relative;
 
-    width:650px;
+    width:700px;
 
-    margin:auto;
-
-    padding:25px 20px 35px;
+    margin:60px auto;
 
     text-align:center;
 
 }
 
-/* ==========================
-        HEADER
-========================== */
+/* =====================================
+   HEADER
+===================================== */
 
 #header{
 
@@ -36,20 +50,22 @@ body{
 
     z-index:5;
 
-    margin-bottom:18px;
+    margin-bottom:24px;
 
 }
 
 #header h1{
 
-    color:white;
+    color:#ffffff;
 
-    font-size:40px;
+    font-size:44px;
 
     font-weight:700;
 
+    letter-spacing:.5px;
+
     text-shadow:
-        0 0 18px rgba(255,255,255,.18);
+        0 3px 10px rgba(0,0,0,.35);
 
 }
 
@@ -57,15 +73,17 @@ body{
 
     margin-top:10px;
 
-    color:#eef7e8;
+    font-size:22px;
 
-    font-size:20px;
+    font-weight:600;
+
+    color:#DCEBCF;
 
 }
 
-/* ==========================
-        BAR
-========================== */
+/* =====================================
+   BAR
+===================================== */
 
 #goal-track{
 
@@ -73,22 +91,24 @@ body{
 
     width:100%;
 
-    height:42px;
+    height:48px;
 
     border-radius:999px;
 
-    background:#243224;
-
-    border:3px solid #c8ddb9;
-
     overflow:visible;
 
+    background:#243224;
+
+    border:3px solid #C8DDB9;
+
     box-shadow:
-        0 0 20px rgba(196,227,176,.35);
+        0 0 18px rgba(196,227,176,.35);
 
 }
 
 #goal-fill{
+
+    position:relative;
 
     width:0%;
 
@@ -98,17 +118,17 @@ body{
 
     background:linear-gradient(
         90deg,
-        #9bbb8d,
-        #d2efc5
+        #A4C792,
+        #D7F0C8
     );
 
     transition:width .8s ease;
 
 }
 
-/* ==========================
-        FROG
-========================== */
+/* =====================================
+   FROG
+===================================== */
 
 #frog{
 
@@ -118,9 +138,9 @@ body{
 
     top:50%;
 
-    width:95px;
+    width:105px;
 
-    transform:translate(-18px,-65%);
+    transform:translate(-25px,-55%);
 
     z-index:20;
 
@@ -133,34 +153,34 @@ body{
 
 }
 
-/* ==========================
-        COUNTER
-========================== */
+/* =====================================
+   COUNTER
+===================================== */
 
 #counter{
 
     margin-top:28px;
 
-    color:white;
-
-    font-size:34px;
+    font-size:36px;
 
     font-weight:700;
 
+    color:#ffffff;
+
     text-shadow:
-        0 0 10px rgba(255,255,255,.18);
+        0 2px 8px rgba(0,0,0,.35);
 
 }
 
 #counter span{
 
-    margin:0 6px;
+    margin:0 4px;
 
 }
 
-/* ==========================
-        PARTICLES
-========================== */
+/* =====================================
+   PARTICLES
+===================================== */
 
 #leaf-layer,
 #sparkle-layer{
@@ -189,8 +209,20 @@ body{
 
     position:absolute;
 
-    width:22px;
+    width:18px;
 
-    opacity:.85;
+    opacity:.9;
+
+}
+
+/* =====================================
+   RESPONSIVE (OBS SAFE)
+===================================== */
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
 
 }
